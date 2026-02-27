@@ -20,7 +20,7 @@ export default function HomePage() {
       <GlobalStyles />
 
       {/* Fixed animated background — behind everything */}
-      {/* <GridBackground /> */}
+      <GridBackground />
 
       {/* Page content */}
       {/* <Box sx={{ position: "relative", zIndex: 1 }}> */}

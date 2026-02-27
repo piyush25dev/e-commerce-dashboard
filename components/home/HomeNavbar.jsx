@@ -5,9 +5,8 @@ import { AppBar, Toolbar, Box, Typography, Button, Link, Stack } from "@mui/mate
 import { alpha } from "@mui/material/styles";
 
 const NAV_LINKS = [
-  { label: "Projects",   href: "/dashboard/projects" },
-  { label: "Skills",     href: "/dashboard/skills" },
-  { label: "Milestones", href: "/dashboard/milestones" },
+  { label: "Products",   href: "/dashboard/products" },
+  { label: "About",     href: "/dashboard/about" },
 ];
 
 export default function HomeNavbar() {
@@ -70,7 +69,7 @@ export default function HomeNavbar() {
               lineHeight:    1,
             }}
           >
-            Portfolio
+            E-Commerce
             <Box component="span" sx={{ color: "primary.main" }}>.</Box>
           </Typography>
         </Box>

@@ -3,10 +3,10 @@ import { Box, Typography } from "@mui/material";
 import { alpha } from "@mui/material/styles";
 
 const TRAFFIC_LIGHTS = ["#ef4444", "#f59e0b", "#10b981"];
-const STAT_DATA      = [["#6366f1","24"],["#22d3ee","11"],["#10b981","3"]];
-const PROJECT_NAMES  = ["E-Commerce Dashboard","Portfolio v2","SaaS Landing","Admin Panel"];
+const STAT_DATA      = [["#6366f1","500"],["#22d3ee","2.4K"],["#10b981","890"]];
+const PRODUCT_NAMES  = ["iPhone 15 Pro","MacBook Air M3","AirPods Pro Max","iPad Mini"];
 const DOT_COLORS     = ["#6366f1","#22d3ee","#f59e0b","#10b981"];
-const SKILL_TAGS     = ["React","Next.js","TS","Tailwind","Firebase","MUI"];
+const CATEGORY_TAGS  = ["Electronics","Laptops","Audio","Tablets"];
 const SIDEBAR_COLORS = ["#6366f1","#94a3b8","#94a3b8","#94a3b8","#94a3b8"];
 
 export default function DashboardMockup() {
@@ -169,7 +169,7 @@ export default function DashboardMockup() {
                     }}
                   />
                   <Typography sx={{ color: "#64748b", fontSize: "0.48rem", mb: 0.5, fontFamily: "'DM Sans',sans-serif", textTransform: "uppercase", letterSpacing: "0.06em" }}>
-                    Total
+                    {["Products", "Orders", "Customers"][i]}
                   </Typography>
                   <Typography sx={{ color: "#f1f5f9", fontSize: "1rem", fontWeight: 800, fontFamily: "'Syne',sans-serif" }}>
                     {v}
@@ -181,7 +181,7 @@ export default function DashboardMockup() {
             {/* Two-column cards */}
             <Box sx={{ display: "grid", gridTemplateColumns: "1.25fr 0.75fr", gap: 1, flex: 1, minHeight: 0 }}>
 
-              {/* Projects list */}
+              {/* Products list */}
               <Box
                 sx={{
                   bgcolor:       "rgba(255,255,255,0.02)",
@@ -195,9 +195,9 @@ export default function DashboardMockup() {
                 }}
               >
                 <Typography sx={{ color: "#f1f5f9", fontSize: "0.58rem", fontWeight: 700, mb: 0.375, fontFamily: "'Syne',sans-serif" }}>
-                  Recent Projects
+                  Recent Products
                 </Typography>
-                {PROJECT_NAMES.map((name, i) => (
+                {PRODUCT_NAMES.map((name, i) => (
                   <Box
                     key={i}
                     sx={{
@@ -228,7 +228,7 @@ export default function DashboardMockup() {
                 ))}
               </Box>
 
-              {/* Skills cloud */}
+              {/* Categories cloud */}
               <Box
                 sx={{
                   bgcolor:       "rgba(255,255,255,0.02)",
@@ -241,12 +241,12 @@ export default function DashboardMockup() {
                 }}
               >
                 <Typography sx={{ color: "#f1f5f9", fontSize: "0.58rem", fontWeight: 700, mb: 0.375, fontFamily: "'Syne',sans-serif" }}>
-                  Skills
+                  Categories
                 </Typography>
                 <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>
-                  {SKILL_TAGS.map((s) => (
+                  {CATEGORY_TAGS.map((c) => (
                     <Box
-                      key={s}
+                      key={c}
                       sx={{
                         px:          0.75,
                         py:          0.25,
@@ -256,7 +256,7 @@ export default function DashboardMockup() {
                       }}
                     >
                       <Typography sx={{ color: "#818cf8", fontSize: "0.48rem", fontWeight: 600, fontFamily: "'DM Sans',sans-serif" }}>
-                        {s}
+                        {c}
                       </Typography>
                     </Box>
                   ))}

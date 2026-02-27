@@ -77,7 +77,7 @@ export default function FinalCTA() {
           variant="overline"
           sx={{ color: "primary.main", display: "block", mb: 2 }}
         >
-          Ready to manage?
+          Ready to scale?
         </Typography>
 
         <Typography
@@ -89,7 +89,7 @@ export default function FinalCTA() {
             mb: 2,
           }}
         >
-          Your portfolio dashboard{" "}
+          Your e-commerce dashboard{" "}
           <Box component="span" className="shimmer-text">
             awaits
           </Box>
@@ -104,8 +104,8 @@ export default function FinalCTA() {
             fontSize: "0.95rem",
           }}
         >
-          Jump straight into the dashboard and start managing your portfolio
-          data in real time.
+          Jump straight into the dashboard and start managing your store, inventory,
+          orders, and customers in real time.
         </Typography>
 
         <Stack
@@ -129,10 +129,10 @@ export default function FinalCTA() {
             variant="outlined"
             color="primary"
             size="large"
-            onClick={() => router.push("/dashboard/projects")}
+            onClick={() => router.push("/dashboard/products")}
             sx={{ px: 3.5, py: 1.5, fontSize: "0.95rem" }}
           >
-            Browse Projects
+            Manage Products
           </Button>
         </Stack>
       </Box>

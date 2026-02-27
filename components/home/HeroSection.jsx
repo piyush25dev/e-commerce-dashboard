@@ -7,10 +7,8 @@ import StatPill from "./StatPill";
 import DashboardMockup from "./DashboardMockup";
 
 const STATS = [
-  { label: "Projects",    value: "24+",       color: "#6366f1", delay: 420 },
-  { label: "Skills",      value: "11+",       color: "#22d3ee", delay: 520 },
-  { label: "Experience",  value: "2 roles",   color: "#10b981", delay: 620 },
-  { label: "Live sync",   value: "Firestore", color: "#f59e0b", delay: 720 },
+  { label: "Products",    value: "24+",       color: "#6366f1", delay: 420 },
+  { label: "About",      value: "11+",       color: "#22d3ee", delay: 520 },
 ];
 
 export default function HeroSection() {
@@ -104,7 +102,7 @@ export default function HeroSection() {
             lineHeight:    1,
           }}
         >
-          Portfolio Dashboard · Admin Panel
+          E-Commerce Dashboard · Admin Panel
         </Typography>
       </Box>
 
@@ -124,7 +122,7 @@ export default function HeroSection() {
       >
         Manage Your{" "}
         <Box component="span" className="shimmer-text">
-          Portfolio
+          E-Commerce
         </Box>
         <br />
         Like a Pro
@@ -144,8 +142,8 @@ export default function HeroSection() {
           opacity:        0,
         }}
       >
-        A powerful admin dashboard to manage projects, skills, experience and
-        milestones — all synced live with Firebase Firestore.
+        A powerful admin dashboard to manage products, about and
+        etc — all synced live with Firebase Firestore.
       </Typography>
 
       {/* ── CTA buttons ── */}
@@ -176,10 +174,10 @@ export default function HeroSection() {
           variant="outlined"
           color="primary"
           size="large"
-          onClick={() => router.push("/dashboard/projects")}
+          onClick={() => router.push("/dashboard/products")}
           sx={{ px: 3.5, py: 1.5, fontSize: "0.95rem" }}
         >
-          View Projects →
+          View Products →
         </Button>
       </Stack>
 
